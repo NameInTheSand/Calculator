@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	tools:ignore="HardcodedText">
+
+	<TextView
+		android:id="@+id/tv_input_view"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:background="@color/black"
+		android:gravity="end"
+		android:textColor="@color/white"
+		android:textSize="50sp"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="5000+400" />
+
+	<TextView
+		android:id="@+id/tv_result"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:background="@color/black"
+		android:gravity="end"
+		android:textColor="@color/white"
+		android:textSize="50sp"
+		app:layout_constraintTop_toBottomOf="@+id/tv_input_view"
+		tools:text="5000+400" />
+
+	<android.support.v7.widget.LinearLayoutCompat
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="@color/purple_200"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_result">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+				android:id="@+id/btn_ac"
+				style="@style/ActionButton"
+				android:text="AC" />
+
+			<TextView
+				android:id="@+id/btn_open_brackets"
+				style="@style/ActionButton"
+				android:text="(" />
+
+			<TextView
+				android:id="@+id/btn_close_brackets"
+				style="@style/ActionButton"
+				android:text=")" />
+
+			<TextView
+				android:id="@+id/btn_divide"
+				style="@style/ActionButton"
+				android:text="/" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+				android:id="@+id/btn_one"
+				style="@style/NumberButton"
+				android:text="1" />
+
+			<TextView
+				android:id="@+id/btn_two"
+				style="@style/NumberButton"
+				android:text="2" />
+
+			<TextView
+				android:id="@+id/btn_three"
+				style="@style/NumberButton"
+				android:text="3" />
+
+			<TextView
+				android:id="@+id/btn_multiple"
+				style="@style/ActionButton"
+				android:text="*" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+				android:id="@+id/btn_four"
+				style="@style/NumberButton"
+				android:text="4" />
+
+			<TextView
+				android:id="@+id/btn_five"
+				style="@style/NumberButton"
+				android:text="5" />
+
+			<TextView
+				android:id="@+id/btn_six"
+				style="@style/NumberButton"
+				android:text="6" />
+
+			<TextView
+				android:id="@+id/btn_plus"
+				style="@style/ActionButton"
+				android:text="+" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+				android:id="@+id/btn_seven"
+				style="@style/NumberButton"
+				android:text="7" />
+
+			<TextView
+				android:id="@+id/btn_eight"
+				style="@style/NumberButton"
+				android:text="8" />
+
+			<TextView
+				android:id="@+id/btn_nine"
+				style="@style/NumberButton"
+				android:text="9" />
+
+			<TextView
+				android:id="@+id/btn_minus"
+				style="@style/ActionButton"
+				android:text="-" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+
+			<TextView
+				android:id="@+id/btn_dot"
+				style="@style/ActionButton"
+				android:text="." />
+
+			<TextView
+				android:id="@+id/btn_zero"
+				style="@style/NumberButton"
+				android:text="0" />
+
+			<TextView
+				android:id="@+id/btn_delete_last"
+				style="@style/ActionButton"
+				android:text="⌫" />
+
+			<TextView
+				android:id="@+id/btn_equals"
+				style="@style/ActionButton"
+				android:text="=" />
+		</LinearLayout>
+	</android.support.v7.widget.LinearLayoutCompat>
+</android.support.constraint.ConstraintLayout>
